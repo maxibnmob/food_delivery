@@ -1,0 +1,64 @@
+﻿<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=devise-width; initial-scale=1.0">
+<title>Доставка еды</title>
+<link rel="stylesheet" href="../style/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<ul class="menu-main">
+  <div class="shopping-cart"><a href="shopping.html"><img src="../img/shopping.png" width="50" height="50"></a></div>
+  <div class="two"><h1>Burger Heroes</h1></div>
+  <li><a href="#" class="current">Главная</a></li>
+   <li><a href="1.html">Рестораны</a></li>
+   <li><a href="2.html">Магазины</a></li>   
+</ul>
+<div class="banner">
+    <a href="#" class="ban">
+    
+    <img src="" id="img1">
+    </a>
+  </div>
+<script>
+  var images = new Array();
+  var a = 0;
+
+  images[0]='../img/1.png';
+  images[1]='../img/2.jpg';
+  images[2]='../img/3.jpg';
+
+  function w(){
+      document.getElementById("img1").src = images[a]
+      a++;
+      if (a == 3){
+          a=0;
+      }
+      setTimeout("w()",5000);
+  }
+  w();
+</script>
+
+
+<div class="footer">
+  <div class="rightfot">
+  <p>ОРГАНИЗАЦИЯ:<br>
+    Антон Дьяченко<br>
+    tel: +7 (916) 015 92 57<br>
+    e-mail: anton.dyachenko@gmail.com
+    </p>
+  </div>
+    <div class="leftfot">
+    <p>PR-МЕНЕДЖЕР:<br> 
+    Алексей Бигильдин<br>
+    tel: +7 (965) 204 97 32<br>
+    e-mail: a.bigildin@yandex.ru</p></div>
+  </div>
+  
+<style>
+body{
+  background-color: rgb(255, 255, 255);
+}
+</style>
+</body>
+</html>

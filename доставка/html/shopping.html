@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=devise-width; initial-scale=1.0">
+<title>Доставка еды</title>
+<link rel="stylesheet" href="../style/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<ul class="menu-main">
+  <div class="shopping-cart"><a href="#"><img src="../img/shopping.png" width="50" height="50"></a></div>
+  <div class="two"><h1>Burger Heroes</h1></div>
+  <li><a href="index.html">Главная</a></li>
+   <li><a href="1.html">Рестораны</a></li>
+   <li><a href="2.html">Магазины</a></li>   
+</ul>
+
+<fieldset>
+  <legend>Оформление заказа</legend>
+<form>
+  <p><b>Введите контактные данные и адрес доставки</b></p>
+  Контактное лицо: <input  type = "text"  id = "Name" placeholder =  "Введите имя и фамилию"> 
+  Ваш адрес: <input  type = "text" id = "Livingadress" placeholder =  "Введите адрес"> <br><br>
+  Телефон: <input  type = "text"  id = "PhoneNumber" placeholder =  "Введите телефон">
+  E-mail: <input  type = "text" id = "E-mail" placeholder =  "Введите e-mail"> <br><br>
+
+  <p>Выберите дату: <input type="date" name="Calendar" id="Data">
+      Выберете время: <input type="time" name="Calendar_time" id="Time">
+      <br> <br>
+
+<p><b>Способ оплаты</b></p>
+  <label> <input  type = "radio"  name = "cash" id="cash" value =  "Наличными" checked>Наличными</label>
+  <label> <input  type = "radio"  name = "cash" id="cash2" value =  "Картой" checked>Картой <br> <br></label>
+
+  <p><b>Предпочитаемый способ получения:</p></b>
+  <select id="select">
+      <option >Выход ко двору</option>
+      <option >До двери</option>
+      
+  </select>
+  <br>
+  <br>
+  
+
+  <input type="submit" value="Подтвердить" onclick="CoolButton()">
+
+</form>
+
+</fieldset>
+<script>
+function CoolButton(){
+let Name = document.getElementById("Name").value;
+let Livingadress = document.getElementById("Livingadress").value;
+let PhoneNumber = document.getElementById("PhoneNumber").value;
+let Email = document.getElementById("E-mail").value;
+let Data = document.getElementById("Data").value;
+let Time = document.getElementById("Time").value;
+let select = document.getElementById("select").value;
+if (document.getElementById("cash").checked){
+  cash_value=document.getElementById("cash").value
+}
+if (document.getElementById("cash2").checked){
+  cash_value=document.getElementById("cash2").value
+}
+
+alert("Имя:" + Name + "\nАдрес:" + Livingadress +"\nВремя:" + Time + "\nДата:" + Data +"\nНомер:"
++ PhoneNumber +"\nEmail:" + Email +"\nПредпочитаемый способ получения:" + select +"\nОплата:" + cash_value);
+}
+
+</script>
+
+<style>
+body{
+  background-color: rgb(255, 255, 255);
+}
+</style>
+</body>
+</html>

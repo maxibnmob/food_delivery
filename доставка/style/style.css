@@ -1,0 +1,660 @@
+@media (max-width: 600px) {
+input{
+wildth:100%;
+display: flex;
+flex-wrap:wrap;
+}
+}
+
+.time,
+.riating {
+  float: left;
+  display: block;
+  margin: 0 5px;
+}
+.prise {
+  float: left;
+  display: flex;
+  margin: -20px;
+  padding: 0 30px;
+}
+button {
+  background-color: #000000;
+  font-size: 16px;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  color: #ffffff;
+  margin: 0 auto;
+  display: block;
+}
+button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.banner img {
+  width: 1100px;
+  height: 800px;
+  margin: 0 auto;
+  display: block;
+}
+@media (max-width: 995px) {
+.banner img {
+  width: 650px;
+  height: 445px;
+  margin: 0 auto;
+  display: block;
+}
+}
+@media (max-width: 600px) {
+.banner img {
+  width: 375px;
+  height:225px;
+  margin: 0 auto;
+  display: block;
+}
+}
+.footer {
+  background: #ffe1d3;
+  width: auto;
+  height: 100px;
+  padding: 0;
+}
+@media (max-width: 600px) {
+.footer {
+  background: #ffe1d3;
+  width: auto;
+  height: 175px;
+  padding: 0;
+}
+}
+@media (max-width: 335px) {
+.footer {
+  background: #ffe1d3;
+  width: auto;
+  height: 270px;
+  padding: 0;
+}
+}
+.menu-main {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  background: white;
+}
+.menu-main li {
+  display: inline-block;
+}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align: top;
+}
+.menu-main li:last-child:after {
+  content: none;
+}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color 0.2s;
+}
+.menu-main a,
+.menu-main a:visited {
+  color: #F08080;
+}
+.menu-main a.current,
+.menu-main a:hover {
+  color: #feb386;
+}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -1px;
+  left: 50%;
+  background: #feb386;
+  transition: 0.8s;
+}
+.menu-main a:hover:before,
+.menu-main .current:before {
+  left: 0;
+}
+.menu-main a:hover:after,
+.menu-main .current:after {
+  right: 0;
+}
+@media (max-width:600px) {
+  .menu-main {
+    padding-top: 0;
+  }
+  .menu-main li {
+    display: block;
+  }
+  .menu-main li:after {
+    content: none;
+  }
+  .menu-main a {
+    padding: 25px 0 20px;
+    margin: 0 30px;
+  }
+}
+body {
+  background-color: #faa069;
+  margin: 0;
+  padding: 0;
+}
+.two {
+  padding: 70px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.two h1 {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  color: #5C2610;
+  font-size: 1.5em;
+  font-weight: normal;
+  line-height: 1;
+  padding: 10px 0;
+  margin: 0;
+  display: inline-block;
+}
+.two h1:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 200%;
+  border-radius: 50%/30%;
+  border: 6px solid #5C2610;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+@media (max-width: 675px) {
+  .two h1 {
+    font-size: 0.9em;
+  }
+}
+.right {
+  width: 45%;
+  float: right;
+}
+.left {
+  width: 45%;
+  float: right;
+}
+.rightfot {
+  width: 45%;
+  float: right;
+}
+.leftfot {
+  width: 45%;
+  float: right;
+}
+@media (max-width:875px) {
+.right {
+  width: 60%;
+  float: left;
+}
+.left {
+  width: 60%;
+  float: left;
+}
+}
+@media (max-width:600px) {
+.rightfot {
+  width: 40%;
+  float: left;
+}
+.leftfot {
+  width: 40%;
+  float: right;
+}
+}
+@media (max-width:335px) {
+.rightfot {
+  width: 100%;
+  float: right;
+}
+.leftfot {
+ wildth:100%;
+  float: left;
+}
+}
+.bk,
+.kfc,
+.sub,
+.dodo {
+  background: white;
+  width: 400px;
+  height: 275px;
+  border-radius: 20px;
+  margin: 10;
+  transition: 0.8s;
+}
+.bk p,
+.kfc p,
+.sub p,
+.dodo p {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.bk img,
+.kfc img,
+.sub img,
+.dodo img {
+  border-radius: 20px;
+}
+.bk:hover,
+.kfc:hover,
+.sub:hover,
+.dodo:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+}
+.anashan,
+.lenta,
+.ns,
+.gul {
+  background: white;
+  width: 400px;
+  height: 275px;
+  border-radius: 20px;
+  margin: 10;
+  transition: 0.8s;
+}
+.anashan p,
+.lenta p,
+.ns p,
+.gul p {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.anashan img,
+.lenta img,
+.ns img,
+.gul img {
+  border-radius: 20px;
+}
+.anashan:hover,
+.lenta:hover,
+.ns:hover,
+.gul:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+}
+.pirazok,
+.King,
+.whopper,
+.Junior,
+.kkombo,
+.cheaz {
+  background: white;
+  width: 400px;
+  height: 280px;
+  border-radius: 20px;
+  margin: 10;
+  transition: 0.8s;
+}
+.pirazok p,
+.King p,
+.whopper p,
+.Junior p,
+.kkombo p,
+.cheaz p {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.pirazok img,
+.King img,
+.whopper img,
+.Junior img,
+.kkombo img,
+.cheaz img {
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
+}
+.pirazok:hover,
+.King:hover,
+.whopper:hover,
+.Junior:hover,
+.kkombo:hover,
+.cheaz:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+}
+.meat,
+.pepe,
+.chetsir,
+.sir,
+.gavai,
+.owosh {
+  background: white;
+  width: 400px;
+  height: 280px;
+  border-radius: 20px;
+  margin: 10;
+  transition: 0.8s;
+}
+.meat p,
+.pepe p,
+.chetsir p,
+.sir p,
+.gavai p,
+.owosh p {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.meat img,
+.pepe img,
+.chetsir img,
+.sir img,
+.gavai img,
+.owosh img {
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
+}
+.meat:hover,
+.pepe:hover,
+.chetsir:hover,
+.sir:hover,
+.gavai:hover,
+.owosh:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+}
+.klab,
+.melt,
+.rostbif,
+.teriyaki,
+.tunec,
+.ind {
+  background: white;
+  width: 400px;
+  height: 280px;
+  border-radius: 20px;
+  margin: 10;
+  transition: 0.8s;
+}
+.klab p,
+.melt p,
+.rostbif p,
+.teriyaki p,
+.tunec p,
+.ind p {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.klab img,
+.melt img,
+.rostbif img,
+.teriyaki img,
+.tunec img,
+.ind img {
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
+}
+.klab:hover,
+.melt:hover,
+.rostbif:hover,
+.teriyaki:hover,
+.tunec:hover,
+.ind:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+}
+.fri,
+.twist,
+.burg,
+.milki,
+.backet,
+.pita {
+  background: white;
+  width: 400px;
+  height: 280px;
+  border-radius: 20px;
+  margin: 10;
+  transition: 0.8s;
+}
+.fri p,
+.twist p,
+.burg p,
+.milki p,
+.backet p,
+.pita p {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.fri img,
+.twist img,
+.burg img,
+.milki img,
+.backet img,
+.pita img {
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
+}
+.fri:hover,
+.twist:hover,
+.burg:hover,
+.milki:hover,
+.backet:hover,
+.pita:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+}
+.sosiski,
+.ogorec,
+.potato,
+.smetana,
+.slivki,
+.iple {
+  background: white;
+  width: 400px;
+  height: 280px;
+  border-radius: 20px;
+  margin: 10;
+  transition: 0.8s;
+}
+.sosiski p,
+.ogorec p,
+.potato p,
+.smetana p,
+.slivki p,
+.iple p {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.sosiski img,
+.ogorec img,
+.potato img,
+.smetana img,
+.slivki img,
+.iple img {
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
+}
+.sosiski:hover,
+.ogorec:hover,
+.potato:hover,
+.smetana:hover,
+.slivki:hover,
+.iple:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+}
+.pips,
+.farh,
+.hahl,
+.mork,
+.shok,
+.pelm {
+  background: white;
+  width: 400px;
+  height: 280px;
+  border-radius: 20px;
+  margin: 10;
+  transition: 0.8s;
+}
+.pips p,
+.farh p,
+.hahl p,
+.mork p,
+.shok p,
+.pelm p {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.pips img,
+.farh img,
+.hahl img,
+.mork img,
+.shok img,
+.pelm img {
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
+}
+.pips:hover,
+.farh:hover,
+.hahl:hover,
+.mork:hover,
+.shok:hover,
+.pelm:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+}
+.sina,
+.konf,
+.anpel,
+.mazik,
+.sir,
+.wd {
+  background: white;
+  width: 400px;
+  height: 280px;
+  border-radius: 20px;
+  margin: 10;
+  transition: 0.8s;
+}
+.sina p,
+.konf p,
+.anpel p,
+.mazik p,
+.sir p,
+.wd p {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.sina img,
+.konf img,
+.anpel img,
+.mazik img,
+.sir img,
+.wd img {
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
+}
+.sina:hover,
+.konf:hover,
+.anpel:hover,
+.mazik:hover,
+.sir:hover,
+.wd:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+}
+.kvas,
+.luk,
+.voda,
+.milk,
+.colbaska,
+.redis {
+  background: white;
+  width: 400px;
+  height: 280px;
+  border-radius: 20px;
+  margin: 10;
+  transition: 0.8s;
+}
+.kvas p,
+.luk p,
+.voda p,
+.milk p,
+.colbaska p,
+.redis p {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.kvas img,
+.luk img,
+.voda img,
+.milk img,
+.colbaska img,
+.redis img {
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
+}
+.kvas:hover,
+.luk:hover,
+.voda:hover,
+.milk:hover,
+.colbaska:hover,
+.redis:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+}
+.shopping-cart {
+  float: right;
+}
